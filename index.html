@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,13 @@
     <link rel="stylesheet" href="stylesheet/css/all.css">
     <link rel="stylesheet" href="stylesheet/webfonts">
 </head>
+
 <body>
     <header>
-        <h2>&lt;Nneka&gt;Sandra&lt;/Nneka&gt;</h2>
+        <h2>NnekaSandra</h2>
         <nav id="navbar">
             <ul>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about-me">About</a></li>
                 <li><a href="#skill-set">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -22,58 +25,78 @@
         </nav>
     </header>
     <section id="welcome-section">
-        <h1>Hello There! Welcome! <br> I am Sandra. A Frontend Developer.</h1>
-    </section>
-    <section id="about-me">
-        <h2>About Me</h2>
-        <img src="images/portrait.jpg" alt="my portrait" class="portrait">
-        <p>I am Njoku, Nneka Sandra. A self-taught Frontend Developer. I am driven to solve Problems with technologies.I create websites that are fully responsive and accessible to everyone. I build my projects using best practices. Timely and Convenient. I am a life-long learner open to learning and corrections and I also look out for collaborations with other developers</p>
-    </section>
-    <section id="skillset">
-        <h2>I am proficient in using the following skills</h2>
-        <div class="skills">
-            <figure>
-                <i class="fab fa-js"></i>
-                <figcaption>JavaScript</figcaption>
-            </figure>
-            <figure>
-                <i class="fab fa-html5"></i>
-                <figcaption>Html</figcaption>
-            </figure>
-            <figure>
-                <i class="fab fa-css3"></i>
-                <figcaption>CSS</figcaption>
-            </figure>
-            <figure>
-                <i class="fab fa-git"></i>
-                <figcaption>Git</figcaption>
-            </figure>
-            <figure>
-                <i class="fab fa-github"></i>
-                <figcaption>Github</figcaption>
-            </figure>
+        <h3>Hello There!👋 Welcome! </h3>
+        <h2>I am Sandra.</h2>
+        <p>A Frontend Developer.</p> <br>
+        <p><a href="#about-me" class="about">More about me <i class="fa fa-angle-down"></i></a></p>
+        <div class="social">
+            <ul>
+                <li><a href="https://twitter.com/nnekasandra_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/nnekasandra" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:nnekasandra2016@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/nneka-s-njoku/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a></li>
+            </ul>
         </div>
     </section>
+    <section id="about-me">
+        <h2>About</h2>
+        <h3 class="section-heading">Little Things About Me</h3>
+        <div class="intro-section">
+            <img src="images/portrait.jpg" alt="my portrait" class="portrait">
+            <p class="intro">I am Sandra. A self-taught Frontend Developer. I am driven to solve Problems with
+                technologies. I am a life-long learner, always open to learning and corrections too. I also look out for
+                collaborations on projects too</p>
+        </div>
+    </section>
+    <section id="skillset">
+        <div class="profile">
+            <h3>Profile</h3>
+            <p>I build fully responsive and accessible websites using best practices with my few tools and resources</p>
+            <dl>
+                <dd>FullName:</dd>
+                <dt>Njoku Nneka Sandra</dt>
+            </dl>
+            <dl>
+                <dd>Email:</dd>
+                <dt>nnekasandra2016@gmail.com</dt>
+            </dl>
+            <dl>
+                <dd>Experience:</dd>
+                <dt>Junior Frontend Developer</dt>
+            </dl>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <p>I am proficient in using the following skills</p>
+            <label for="html">Html</label>
+            <progress id="Html" max="100" value="80">80%</progress>
+            <label for="css">CSS</label>
+            <progress id="Html" max="100" value="70">70%</progress>
+            <label for="js">JavaScript</label>
+            <progress id="js" max="100" value="50">80%</progress>
+            <label for="git">Git</label>
+            <progress id="git" max="100" value="80">80%</progress>
+            <label for="github">Github</label>
+            <progress id="github" max="100" value="80">80%</progress>
+        </div>
+        <button><a href="http://">DownLoad CV</a></button>
+    </section>
     <section id="projects">
-        <h2>Here Are Some of My works(Projects)</h2>
-        <div class="projects">   
+        <h3>Portfolio</h3>
+        <h2>Check Out Some of my works</h2>
+        <p>These are some of the projects I built while learning and applying my little knowledge to create things.</p>
+        <div class="projects">
             <div class="project-tile">
                 <figure>
-                    <img src="images/calculator.png" alt="calculator-project">
-                    <figcaption class="project-title">calculator App</figcaption>
+                    <img src="images/documentation.png" alt="documentation-project">
+                    <figcaption class="project-title">HTML Documentation Page</figcaption>
                 </figure>
-                <p class="description">This is a calculator app made with html, CSS and javascript</p>
-                <a href="https://github.com/nnekasandra/calculator.git" class="project-links">code here</a>
-                <a href="https://nnekasandra.github.io/calculator/" class="project-links">live Preview</a>
-            </div>
-            <div class="project-tile">
-                    <figure>
-                        <img src="images/documentation.png" alt="documentation-project">
-                        <figcaption class="project-title">HTML Documentation Page</figcaption>
-                    </figure>
-                    <p class="description">A Fully Responsive Technical documentation page made with html and CSS</p>
-                    <a href="https://github.com/nnekasandra/technical-documentation.git" class="project-links">Code Here</a>
-                    <a href="https://nnekasandra.github.io/technical-documentation/index.html" class="project-links">Live Preview</a>
+                <p class="description">A Fully Responsive Technical documentation page made with html and CSS</p>
+                <p><a href="https://github.com/nnekasandra/technical-documentation.git" target="_blank"
+                        class="project-links">Code Here</a></p>
+                <p><a href="https://nnekasandra.github.io/technical-documentation/index.html" target="_blank"
+                        class="project-links">Live Preview</a></p>
             </div>
             <div class="project-tile">
                 <figure>
@@ -81,24 +104,40 @@
                     <figcaption class="project-title">Product Landing Page</figcaption>
                 </figure>
                 <p class="description">A product Landing Page Made with HTML and CSS</p>
-                <a href="https://github.com/nnekasandra/product-landing-page.git" class="project-links">Code Here</a>
-                <a href="https://nnekasandra.github.io/product-landing-page/" class="project-links">Live Preview: </a>
+                <p><a href="https://github.com/nnekasandra/product-landing-page.git" target="_blank"
+                        class="project-links">Code Here</a></p>
+                <p><a href="https://nnekasandra.github.io/product-landing-page/" target="_blank"
+                        class="project-links">Live Preview: </a></p>
             </div>
             <div class="project-tile">
-                    <figure>
-                        <img src="images/surveyform.png" alt="surveyform-project">
-                        <figcaption class="project-title">Survey Form</figcaption>
-                    </figure>
-                    <p class="description">A survey form Project that accepts input from users. Made with Html and CSS</p>
-                    <a href="https://github.com/nnekasandra/survey-form.git" class="project-links">Code Here</a>
-                    <a href="https://nnekasandra.github.io/survey-form/survey-form/" class="project-links">Live Preview</a>
+                <figure>
+                    <img src="images/calculator.png" alt="calculator-project">
+                    <figcaption class="project-title">calculator App</figcaption>
+                </figure>
+                <p class="description">This is a calculator app made with html, CSS and javascript</p>
+                <p><a href="https://github.com/nnekasandra/calculator.git" target="_blank" class="project-links">code
+                        here</a></p>
+                <p><a href="https://nnekasandra.github.io/calculator/" target="_blank" class="project-links">live
+                        Preview</a></p>
             </div>
-        </div> 
+            <div class="project-tile">
+                <figure>
+                    <img src="images/surveyform.png" alt="surveyform-project">
+                    <figcaption class="project-title">Survey Form</figcaption>
+                </figure>
+                <p class="description">A survey form Project that accepts input from users. Made with Html and CSS</p>
+                <p><a href="https://github.com/nnekasandra/survey-form.git" target="_blank" class="project-links">Code
+                        Here</a></p>
+                <p><a href="https://nnekasandra.github.io/survey-form/survey-form/" target="_blank"
+                        class="project-links">Live Preview</a></p>
+            </div>
+        </div>
     </section>
     <section id="contact">
+        <h2>Connect with Me</h2>
+        <h3>I'd Love to Hear from You</h3>
         <div>
-            <h2>Contact Me</h2>
-            <p>leave a message</p>
+            <p class="message">leave a message</p>
             <form action="https://formspree.io/f/xjvppldk" method="POST">
                 <input type="text" name="name" placeholder="Name"> <br><br>
                 <input type="email" name="_replyto" placeholder="Email"><br><br>
@@ -106,21 +145,30 @@
                 <input type="submit" value="Send" id="submit">
             </form>
         </div>
+        <div class="email">
+            <figure>
+                <i class="fa fa-envelope"></i>
+                <figcaption>Email me at nnekasandra2016@gmail.com</figcaption>
+            </figure>
+        </div>
         <div class="socials">
             <p>Socials</p>
             <ul>
                 <li><a href="https://twitter.com/nnekasandra_" target="_blank"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="https://github.com/nnekasandra" target="_blank"><i class="fab fa-github"></i></a></li>
                 <li><a href="mailto:nnekasandra2016@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/nneka-s-njoku/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/nneka-s-njoku/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a></li>
             </ul>
         </div>
     </section>
     <footer>
+        <p>&copy; NnekaSandra 2020</p>
         <p>Made with 💓 by <a href="https://twitter.com/nnekasandra_" class="footer-link">Sandra</a></p>
     </footer>
     <!-- contain link to projects and code -->
     <!--  The height of the welcome section should be equal to the height of the viewport.  -->
     <!-- The navbar should always be at the top of the viewport. -->
 </body>
+
 </html>

@@ -1,23 +1,24 @@
 *{
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
-    padding: 0;
+}
+body{
+    color: #3d3b3b;
+}
+img{
+    max-width: 100%;
+    width: 80%;
 }
 header{
     width: 100%;
     height: 120px;
-    background-color: #4F6D7A;
-    margin: 10px;
-    /* position: fixed; */
-    left: 0;
-    top: 0;
-    z-index: 2;
+    background-color: #0d1137;
 }
 header h2{
     font-size: 1.5em;
     position: relative;
     top: 30px;
-    color: #DBE9EE;
 }
 nav ul{
     float: right;
@@ -30,111 +31,215 @@ nav ul li{
 nav ul li a{
     font-size: 25px;
     text-decoration: none;
-    color: #C0D6DF;
+    color: #e52165;
 }
 nav ul li a:hover{
-    font-size: 28px;
-    border-bottom: 1px solid #000;
+    position: relative;
+    left: 10px;
+    transition: 2s;
 }
-section#welcome-section{
-    margin: 10px;
-    background: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHRlY2hub2xvZ3l8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
-    background-color: #4A6FA5;
-    background-position: center center;
+#welcome-section{
+    background-image: url('https://images.unsplash.com/photo-1580163238333-aeab3b0a112d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxiYWNrZ3JvdW5kJTIwYmxhY2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    height: 90%;
+    color: #fff;
     text-align: center;
-    height: 150px;
-    font-size: 2em;
+    padding: 2.2em;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+#welcome-section h3{
+    color: #e52165;
+}
+#welcome-section h2{
+    font-size: 2.2em;
+    letter-spacing: 8px;
+}
 
+#welcome-section p{
+    font-style: italic;
+}
+.about{
+    border: 5px solid #000000;
+    border-radius: 5px;
+    height: 80px;
+    line-height: 80px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    font-style: normal;
+}
+.about:hover{
+    border: 5px solid #e52165;
+}
+#welcome-section .social ul li{
+    margin-top: 50px;
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+#welcome-section .social ul li a{
+    color: #fff;
+    font-size: 30px;
+}
+#welcome-section .social ul li a:hover{
+    color: #e52165;
+    transition: 1s;
 }
 #about-me{
-    background-color: #166088;
-    text-align: center;
-    font-size: 1.5em;
-
+    background-color: #fff;
+    margin-top: 30px;
 }
-img{
-    max-width: 100%;
-    width: 40%;
+#about-me::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#about-me h2{
+    text-align: center;
+    color: #e52165;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+#about-me .section-heading{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
 }
 .portrait{
+    width: 180px;
     border-radius: 50%;
+    float: left;
+    margin-right: 50px;
+}
+.intro-section{
+    margin: 30px 100px;
+}
+.intro{
+    float: left;
     width: 50%;
+    line-height: 2.5em;
+}
+p{
+    font-size: 1.4em;
+}
+#skillset .profile h3,#skillset .skills h2{
+    font-size: 2em;
+    margin-bottom: 30px;
+
+}
+#skillset .profile p{
+    line-height: 2em;
 }
 #skillset{
-    color: #4A6FA5;
-    font-size: 1.6rem;
+    margin: 10px 20px;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
 }
-.skills figure{
-    border: 2px solid #000;
+dd{
+    font-weight: bold;
+    font-size: 1.6em;
+    text-transform: uppercase;
 }
-i{
+dt{
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+dl{
+    margin-bottom: 30px;
+}
+progress[value]{
+    border: 3px solid #0d1137;
+    width: 90%;
+    height: 20px;
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+
+}
+progress[value]::-webkit-progress-bar {
+    background-color: #fff;
+    border-radius: 2px;
+
+}
+progress[value]::-webkit-progress-value {
+        background-color:  #0d1137;
+        border-radius: 5px;
+}
+progress[value]::-moz-progress-bar {
+        background-color: #0d1137;
+}
+label{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button{
+    display: block;
+    background-color: #0d1137;
+    font-weight: bold;
+    width: 50%;
+    height: 70px;
+    grid-column: 1/-1;
+    margin: 0 auto;
+}
+button a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
     font-size: 2em;
 }
-.skills{
-    display: grid;
-    /*! box-shadow: ; */
-    grid-template-columns: repeat(3, 20%);
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 30px;
+#projects h3,#projects h2,#projects p{
     text-align: center;
-}
-#projects{
-    text-align: center;
-    /* background-color: #4F6D7A; */
-    font-size: 1.5em;
 }
 .projects{
     display: grid;
-    grid-gap: 30px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr); 
+    grid-gap: 30px;  
+}
+.project-tile{
+    border: 3px solid #0d1137;
+    box-shadow: 2px 3px 2px #e52165;
+}
+#projects p{
+    line-height: 1.8em;
+}
+figcaption{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
 .description{
-    color: #166088;
-    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1em;
 }
 .project-links{
-    border: 1px solid #000;
     text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    padding: 20px;
-    width: 120px;
-    margin-right: 60px;
-    color: #DBE9EE;
-    font-size: 30px;
-    background-color: #166088;
-    height: 100px;
-    /* background: linear-gradient(145deg, #f0f0f0, #cacaca); */
-    /* box-shadow:  9px 9px 19px #bebebe,-9px -9px 19px #ffffff; */
-}
-.project-links:hover{
-    background-color: #4F6D7A;
-    color: #166088;
-    position: relative;
-    top: 5px;
-    bottom: 10px;
-    transition: 1s;
-}
-figcaption.project-title{
+    border: 3px solid #0d1137;
+    color: #e52165;
+    font-weight: bold;
     font-size: 1.5em;
-    text-transform: uppercase;
+    background-color: #0d1137;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    text-transform: capitalize;
+    
 }
 #contact{
-    background-color: #C0D6DF;
-    margin: 10px;
-    padding: 20px;
-}
-#contact h2{
-    font-size: 2em;
-    text-transform: uppercase;
-}
-#contact p{
-    text-transform: capitalize;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    background-color: #0d1137;
+    text-align: center;
+    padding: 30px;
 }
 input{
     width: 700px;
@@ -143,13 +248,13 @@ input{
     background-color: #166088;
 }
 input::placeholder{
-    color: purple;
+    color: #e52165;
     font-size: 20px;
 }
 textarea{
     width: 700px;
     height: 180px;
-    border: 3px solid #ccc;
+    border: 3px solid #fff;
     font-size: 18px;
 }
 input[submit]{
@@ -161,38 +266,49 @@ input[submit]{
     cursor: pointer;
     font-size: 30px;
 }
-section#contact{
-    display: flex;
-    flex-direction: row;
+#contact h2{
+    text-align: center;
+    font-size: 2.3em;
+    text-transform: capitalize;
+    color: #e52165;
 }
-#contact .socials p{
-    font-size: 1.5em;
-    font-weight: bold;
-    /*! color: /////; */
+#contact h3,.message{
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-size: 2em;
 }
-.project-tile{
-    border: 1px solid #000;
-    margin-bottom: 30px;
-}
-#contact .socials ul li{
+.socials ul li{
     list-style: none;
-    font-size: 2.1em;
+    display: inline-block;
+    margin-left: 50px;
 }
-#contact .socials ul li:hover{
-    position: relative;
-    left: 10px;
-    right: 10px;
+.socials  li a{
+    color: #e52165;
+    transition: 1s;
+    font-size: 2em;
 }
-#contact .socials li a{
-    /* !color: #4F6D7A; */
+.socials  li a:hover{
+    color: #fff;
 }
-#contact .socials ul{
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-gap: 30px;
+.email{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.socials{
-    margin-left: 90px;
+.email figure i{
+    font-size: 3em;
+    color: #e52165;
+}
+.email figcaption{
+    color: #666262;
+}
+.socials p{
+    font-size: 2em;
+    color: #fff;
+}
+.socials ul{
+    border-top: 3px solid #666262;
+    border-bottom: 3px solid #666262;
 }
 footer{
     background-color: #166088;
@@ -202,34 +318,20 @@ footer{
 }
 .footer-link{
     text-decoration: none;
+    color: #e52165;
 }
 .footer-link:hover{
-    font-size: 34px;
+    font-size: 30px;
     border-bottom: 1px solid #000;
 }
-@media only screen and (max-width: 768px){
-    form{
+@media only screen and (max-width:789px){
+    .portrait{
+        float: none;
+    }
+    #about-me{
         text-align: center;
     }
-    input,textarea{
-        width: 500px;
-    }
-    section#contact{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #contact .socials ul{
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
+    #skillset{
         grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .socials{
-        margin-left: 0;
-    }
-    .projects{
-        display: flex;
-        flex-direction: column;
     }
 }
