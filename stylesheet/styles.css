@@ -4,8 +4,27 @@
     box-sizing: border-box;
 }
 body{
-    color: #3d3b3b;
+    /* color: #3d3b3b; */
 }
+/* span{
+    position: absolute;
+    right: 0;
+    top: -3.6rem;
+    display: block;
+    color: #fff;
+    line-height: 1;
+    background-color: #0d1137;
+    padding: 0.6rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 0.6rem;
+    padding-right: 0.6rem;
+    border-radius: 3px;
+    border-top-left-radius:3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+} */
 img{
     max-width: 100%;
     width: 80%;
@@ -80,34 +99,41 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active{
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
-    padding: 4em 3em;
     margin-top: 0;
     font-size: 1.8em;
     height: 100vh;
 }
+.welcome-texts{
+    padding: 250px 150px;
+}
+
 #welcome-section h3{
     color: #e52165;
+    font-size: 1.5em;
 }
 #welcome-section h2{
-    font-size: 2.2em;
-    letter-spacing: 8px;
+    font-size: 2.5em;
+    letter-spacing: 9px;
 }
 
 #welcome-section p{
     font-style: italic;
+    font-size: 1.6em;
+    letter-spacing: 2px;
 }
 .about{
     border: 5px solid #000000;
     border-radius: 5px;
     height: 80px;
     line-height: 80px;
-    width: 300px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    letter-spacing: 5px;
+    padding: 5px;
+    letter-spacing: 2px;
     font-style: normal;
+    font-size: 1em;
 }
 .about:hover{
     border: 5px solid #e52165;
@@ -128,13 +154,8 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active{
 }
 #about-me{
     background-color: #fff;
-    margin-top: 50px;
+    margin-top: 80px;
 }
-/* #about-me::after{
-    content: "";
-    display: block;
-    clear: both; */
-
 #about-me h2{
     text-align: center;
     color: #e52165;
@@ -151,9 +172,9 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active{
     border-radius: 50%;
 }
 .intro-section{
-    margin:10px 30px;
+    margin:40px 150px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns:200px 1fr ;
     grid-gap: 30px;
 }
 .intro{
@@ -199,13 +220,10 @@ progress[value]{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    
-
 }
 progress[value]::-webkit-progress-bar {
     background-color: #fff;
     border-radius: 2px;
-
 }
 progress[value]::-webkit-progress-value {
         background-color:  #0d1137;
@@ -218,35 +236,52 @@ label{
     font-weight: bold;
     text-transform: uppercase;
 }
-button{
+button.cv{
     display: block;
     background-color: #0d1137;
     font-weight: bold;
-    width: 50%;
+    width: 70%;
     height: 70px;
     grid-column: 1/-1;
     margin: 0 auto;
 }
-button a{
+button.cv a{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 2em;
+    line-height: 70px;
 }
 #projects h3,#projects h2,#projects p{
     text-align: center;
 }
+#projects h3{
+    color: #e52165;
+    font-size: 2em;
+}
+#projects h2{
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+#projects p{
+    font-size: 1.6em;
+}
 .projects{
     display: grid;
     grid-template-columns: repeat(2,1fr); 
-    grid-gap: 30px;  
+    grid-gap: 30px; 
+    align-items: center; 
+    justify-items: center;
+    align-content: center;
 }
 .project-tile{
     border: 3px solid #0d1137;
-    box-shadow: 2px 3px 2px #e52165;
+    padding: 30px;
+    box-shadow: inset 1px -2px 6px rgba(0, 0,0, 0.3)
 }
 #projects p{
     line-height: 1.8em;
+    letter-spacing: px;
 }
 figcaption{
     font-weight: bold;
@@ -268,7 +303,12 @@ figcaption{
     width: 60px;
     text-align: center;
     text-transform: capitalize;
-    
+    width: 30%;
+}
+button{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }
 #contact{
     background-color: #0d1137;
@@ -276,7 +316,7 @@ figcaption{
     padding: 30px;
 }
 input{
-    width: 700px;
+    width: 60%;
     height: 50px;
     border-radius: 8px;
     background-color: #166088;
@@ -286,8 +326,8 @@ input::placeholder{
     font-size: 20px;
 }
 textarea{
-    width: 700px;
-    height: 180px;
+    width: 60%;
+    height: 150px;
     border: 3px solid #fff;
     font-size: 18px;
 }
@@ -299,12 +339,18 @@ input[submit]{
     width: 150px;
     cursor: pointer;
     font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 #contact h2{
     text-align: center;
     font-size: 2.3em;
     text-transform: capitalize;
     color: #e52165;
+}
+form{
+    border: 2px solid #e52165;
+    padding: 20px;
 }
 #contact h3,.message{
     color: #fff;
@@ -326,41 +372,39 @@ input[submit]{
     color: #fff;
 }
 .email{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 30px;
 }
 .email figure i{
     font-size: 3em;
     color: #e52165;
 }
 .email figcaption{
-    color: #666262;
+    color: #fff;
 }
 .socials p{
     font-size: 2em;
-    color: #fff;
+    color: #e52165;
 }
 .socials ul{
-    border-top: 3px solid #666262;
-    border-bottom: 3px solid #666262;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
 }
 footer{
     background-color: #166088;
-    padding: 20px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 15px;
     text-align: center;
 }
 .footer-link{
     text-decoration: none;
     color: #e52165;
 }
-.footer-link:hover{
-    font-size: 30px;
-    border-bottom: 1px solid #000;
-}
 @media only screen and (max-width:789px){
     .portrait{
-        float: none;
+    text-align: center;
+    margin: 0 auto;
     }
     #about-me{
         text-align: center;
@@ -368,13 +412,39 @@ footer{
     #skillset{
         grid-template-columns: 1fr;
     }
-    #welcome-section{
-        padding: 3em 2em;
-        margin-top: 0;
-        font-size: 1.5em;
+    .welcome-texts{
+    padding: 150px 100px;
     }
+    #welcome-section h3{
+        font-size: 1em;
+    }
+    #welcome-section h2{
+    font-size: 2em;
+    letter-spacing: 5px;
+    }
+    #welcome-section p{
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
     .intro-section{
-        display: flex;
-        flex-direction: row;
+        text-align: center;
+        margin: 20px;
+        display: block;
+    }
+    .about{
+        width: 20px;
+        font-size: 1em;
+    }
+    button.cv{
+        width: 100%;
+    }
+    #skillset .profile h3{
+        text-align: center;
+    }
+    input,textarea{
+        width: 80%;
+    }
+    .projects{
+        grid-template-columns: 1fr;
     }
 }
