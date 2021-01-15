@@ -333,7 +333,8 @@ form{
 .socials ul li{
     list-style: none;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 40px;
+    text-align: center;
 }
 .socials  li a{
     color: #e52165;
@@ -454,4 +455,22 @@ footer{
     .projects{
         grid-template-columns: 1fr;
     }
+}
+@media only screen and (max-width:500px){
+    .about{
+        font-size: .8em;
+    }
+    #welcome-section h3{
+        font-size: .6em;
+        margin-bottom: 10px;
+    }
+    #welcome-section h1{
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    }
+    #welcome-section p{
+    font-size: .7em;
+    letter-spacing: 0.05em;
+}
 }
