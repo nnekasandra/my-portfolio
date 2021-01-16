@@ -209,28 +209,29 @@ label{
 .skills figure i{
     font-size: 3em;
     color: #e52165;
-    margin: 0 auto;
+    padding: 0;
+    
 }
 .skills figure{
     border: 2px groove #0d1137;
     margin-bottom: 8px;
-    width: 150px;
+    width: 120px;
+}
+.skills figure:hover{
+    position: relative;
+    top: 5px;
+    bottom: 5px;
 }
 .skills figure figcaption{
     background-color: #0d1137;
     color: #fff;
     padding: 10px;
+    text-align: center;
 }
 .skillset{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-}
-.git{
-    /* grid-column: span 2; */
-}
-.html{
-    grid-row: span ;
+    grid-gap: 20px;
 }
 button.cv{
     display: block;
